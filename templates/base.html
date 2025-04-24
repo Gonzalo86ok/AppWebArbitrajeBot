@@ -1,3 +1,4 @@
+<{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,18 +11,10 @@
         <h1>AppWebArbitrajeBot</h1>
         <nav>
             <a href="/">Inicio</a>
-            <!-- Acá podés ir sumando más links -->
         </nav>
     </header>
 
-    <main>
-        {% block content %}
-        <!-- El contenido de cada página va acá -->
-        {% endblock %}
-    </main>
-
-    <footer>
-        <p>&copy; 2025 AppWebArbitrajeBot</p>
-    </footer>
+    {% block content %}{% endblock %}
 </body>
 </html>
+
