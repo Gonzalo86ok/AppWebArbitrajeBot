@@ -1,22 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %}Iniciar sesión | Chain Nova{% endblock %}
+{% block title %}Chain Nova{% endblock %}
 
 {% block content %}
 <style>
-    body {
-        background-color: #000;
-        color: white;
-        font-family: Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-    }
-
     .card {
-        background: linear-gradient(to bottom, #1e3a8a, #111827); /* degradado azul a negro */
+        background: linear-gradient(to bottom, #1e3a8a, #111827);
         padding: 40px;
         border-radius: 15px;
         text-align: center;
@@ -52,7 +41,7 @@
     }
 
     .form-button {
-        background-color: #facc15; /* amarillo tipo Tailwind yellow-400 */
+        background-color: #facc15;
         font-weight: bold;
         cursor: pointer;
     }
@@ -70,6 +59,6 @@
     <p>Iniciar sesión</p>
     <input type="text" class="form-input" placeholder="Email / número de teléfono">
     <button class="form-button">Siguiente</button>
-    <a href="#" class="link">Crear cuenta en Chain Nova</a>
+    <a href="{% url 'registro' %}" class="link">Crear cuenta en Chain Nova</a>
 </div>
 {% endblock %}

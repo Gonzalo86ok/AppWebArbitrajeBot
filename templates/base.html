@@ -2,16 +2,69 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}ChainNova{% endblock %}</title>
+    <title>{% block title %}Mi sitio{% endblock %}</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .registro-container {
+            max-width: 400px;
+            margin: 40px auto;
+            background: #111827;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .registro-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        form button {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: #facc15;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #eab308;
+        }
+    </style>
+    {% block head %}{% endblock %}
 </head>
 <body>
-    <header>
-        <h2>Chain Nova</h2>
-        <!-- acá podrías meter el navbar más adelante -->
-    </header>
-
-    <main>
-        {% block content %}{% endblock %}
-    </main>
+    {% block content %}{% endblock %}
 </body>
 </html>

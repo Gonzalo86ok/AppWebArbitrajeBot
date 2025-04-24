@@ -5,3 +5,6 @@ def home(request):
 
 def landing(request):
     return render(request, 'landing.html')
+
+def registro(request):
+    return render(request, 'usuarios/registro.html')
