@@ -1,20 +1,17 @@
-<{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>{% block title %}AppWebArbitrajeBot{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'usuarios/style.css' %}">
+    <title>{% block title %}ChainNova{% endblock %}</title>
 </head>
 <body>
     <header>
-        <h1>AppWebArbitrajeBot</h1>
-        <nav>
-            <a href="/">Inicio</a>
-        </nav>
+        <h2>Chain Nova</h2>
+        <!-- acá podrías meter el navbar más adelante -->
     </header>
 
-    {% block content %}{% endblock %}
+    <main>
+        {% block content %}{% endblock %}
+    </main>
 </body>
 </html>
-
