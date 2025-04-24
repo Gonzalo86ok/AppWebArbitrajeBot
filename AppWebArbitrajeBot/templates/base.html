@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}AppWebArbitrajeBot{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'usuarios/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>AppWebArbitrajeBot</h1>
+        <nav>
+            <a href="/">Inicio</a>
+            <!-- Acá podés ir sumando más links -->
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- El contenido de cada página va acá -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AppWebArbitrajeBot</p>
+    </footer>
+</body>
+</html>
