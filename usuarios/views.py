@@ -1,10 +1,10 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'usuarios/home.html')
+    return render(request, 'home.html')
 
 def landing(request):
     return render(request, 'landing.html')
 
 def registro(request):
-    return render(request, 'usuarios/registro.html')
+    return render(request, 'registro.html')
