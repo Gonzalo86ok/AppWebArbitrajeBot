@@ -1,6 +1,72 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chain Nova</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-{% block content %}
-    <h1>Bienvenido a Chain Nova</h1>
-    <p>Acá vas a poder ver oportunidades de arbitraje cripto entre distintos exchanges.</p>
-{% endblock %}
+        .center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: linear-gradient(to bottom, #1e3a8a, #111827);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        }
+
+        .form-input, .form-button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        .form-input {
+            margin-bottom: 15px;
+            background-color: #f3f4f6;
+            color: #000;
+        }
+
+        .form-button {
+            background-color: #facc15;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .link {
+            margin-top: 20px;
+            display: block;
+            color: #facc15;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-container">
+        <div class="card">
+            <h2>CHAIN NOVA</h2>
+            <p>Iniciar sesión</p>
+            <input type="text" class="form-input" placeholder="Email / número de teléfono">
+            <button class="form-button">Siguiente</button>
+            <a href="{% url 'registro_usuario' %}" class="link">Crear cuenta en Chain Nova</a>
+        </div>
+    </div>
+</body>
+</html>
