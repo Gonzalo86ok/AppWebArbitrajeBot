@@ -26,3 +26,7 @@ def registro_usuario(request):
             mensaje = "Usuario registrado con éxito"
     
     return render(request, 'registro.html', {'mensaje': mensaje})
+
+def dashboard_view(request):
+    return render(request, 'dashboard.html')
+

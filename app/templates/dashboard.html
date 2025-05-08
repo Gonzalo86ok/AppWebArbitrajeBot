@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chain Nova - Panel</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: #111827;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #facc15;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .perfil {
+            margin-left: auto;
+            color: #facc15;
+        }
+
+        .contenido {
+            padding: 40px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #1f2937;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #374151;
+        }
+
+        th {
+            background-color: #111827;
+            color: #facc15;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chain Nova</h1>
+        <nav>
+            <a href="#">CompraCripto</a>
+            <a href="#">Mercado</a>
+            <a href="#">Billetera</a>
+            <a href="{% url 'home' %}">Cerrar sesión</a>
+            <a href="#" class="perfil">Perfil</a>
+        </nav>
+    </header>
+
+    <div class="contenido">
+        <h2 style="text-align:center;">Mercado</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Moneda</th>
+                    <th>Precio moneda</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Bitcoin</td><td>10</td></tr>
+                <tr><td>BNB</td><td>10</td></tr>
+                <tr><td>Cardano</td><td>10</td></tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
